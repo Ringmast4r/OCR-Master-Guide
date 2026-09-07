@@ -90,7 +90,11 @@ and the 8 GB fit table are in [07-vlm-document-parsers.md](07-vlm-document-parse
 | [Nanonets-OCR2-3B](https://huggingface.co/nanonets/Nanonets-OCR2-3B) | Nanonets | 3B | ~7 GB | Apache-2.0 | MD with tables, LaTeX, checkboxes, signatures, watermarks | Qwen2.5-VL fine-tune; tags semantic elements |
 | [LightOnOCR-1B](https://huggingface.co/lightonai/LightOnOCR-1B-1025) | LightOn | 1B | ~3 GB | Apache-2.0 | MD | Very fast; cleaner output than 3B rivals on scanned forms in independent tests |
 | [Granite-Docling-258M](https://huggingface.co/ibm-granite/granite-docling-258m) | IBM | 258M | ~1 GB (CPU ok) | Apache-2.0 | DocTags -> MD/JSON | Runs on CPU and Apple MLX; Docling's `--pipeline vlm` default |
-| [MinerU2.5-1.2B](https://huggingface.co/opendatalab/MinerU2.5-2509-1.2B) | OpenDataLab | 1.2B | ~4 GB | AGPL-3.0 | MD/JSON | The `vlm` backend of MinerU; 75.2 on olmOCR-Bench |
+| [MinerU2.5-1.2B](https://huggingface.co/opendatalab/MinerU2.5-2509-1.2B) | OpenDataLab | 1.2B | ~4 GB | AGPL-3.0 | MD/JSON | The `vlm` backend of MinerU; 93.0 OmniDocBench v1.6, 75.2 olmOCR-Bench |
+| [MinerU2.5-Pro](https://github.com/opendatalab/MinerU) | OpenDataLab | 1.2B | ~4 GB | AGPL-3.0 | MD/JSON | Rank 2 on OmniDocBench v1.6 (95.8); newer MinerU builds pull it as the vlm model |
+| [Youtu-Parsing](https://github.com/TencentCloudADP/youtu-parsing) | Tencent | 2.5B | ~6 GB | check card | MD/JSON | Rank 6 on OmniDocBench v1.6 (93.7) |
+| [Qianfan-OCR](https://huggingface.co/baidu) | Baidu | 4B | ~9 GB (4-bit ~3) | check card | MD/JSON | Rank 7 on OmniDocBench v1.6 (93.9); has its own OmniDocBench sub-leaderboard |
+| [Infinity-Parser 7B](https://huggingface.co/infly) | Infinity | 7B | ~16 GB | check card | MD | Rank 2 on olmOCR-Bench (82.5), between Chandra and olmOCR-2 |
 | [Surya 2](https://github.com/datalab-to/surya) | Datalab | ~650M | ~2.5 GB | Apache-2.0 code | Layout + OCR + tables | Pareto-best under 3B; 5 pages/s on a 5090; handwriting and forms improved over v1 |
 | [MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR) | HUST | 1.2B / 3B | 4 to 7 GB | Apache-2.0 | MD/JSON | Structure-Recognition-Relation triplet design |
 | [GOT-OCR 2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0) | UCAS | 580M | ~2 GB | Apache-2.0 | plain / formatted (MD, LaTeX, TikZ) | In Hugging Face Transformers natively; sheet music, charts, molecules |

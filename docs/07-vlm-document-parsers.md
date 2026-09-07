@@ -43,7 +43,9 @@ Three design axes explain every model in the table:
 | [LightOnOCR-1B](https://huggingface.co/lightonai/LightOnOCR-1B-1025) | 1B | ~3 GB | yes | Transformers | vLLM (fast) | MD | Beat 3B rivals on scanned forms in independent tests |
 | [Granite-Docling-258M](https://huggingface.co/ibm-granite/granite-docling-258m) | 0.26B | ~1 GB, CPU ok | yes | Docling `--pipeline vlm`, Transformers, MLX | same | DocTags -> MD/JSON | Layout-faithful, small |
 | [Nanonets-OCR2-3B](https://huggingface.co/nanonets/Nanonets-OCR2-3B) | 3B | ~7 GB | tight; INT4 ok | Transformers | vLLM | MD with semantic tags (signature, watermark, checkbox, table, LaTeX) | 69.5 olmOCR-Bench |
-| [MinerU2.5-1.2B](https://huggingface.co/opendatalab/MinerU2.5-2509-1.2B) | 1.2B | ~4 GB | yes | `mineru -b vlm-transformers` | `-b vlm-vllm-engine` | MD/JSON | 75.2 olmOCR-Bench |
+| [MinerU2.5-1.2B / 2.5-Pro](https://github.com/opendatalab/MinerU) | 1.2B | ~4 GB | yes | `mineru -b vlm-transformers` | `-b vlm-vllm-engine` | MD/JSON | Pro: 95.8 OmniDocBench v1.6 (rank 2); 2.5.4: 75.2 olmOCR-Bench |
+| [Infinity-Parser 7B](https://huggingface.co/infly) | 7B | ~16 GB | no (4-bit) | Transformers 4-bit | vLLM | MD | 82.5 olmOCR-Bench (rank 2) |
+| [Youtu-Parsing](https://github.com/TencentCloudADP/youtu-parsing) | 2.5B | ~6 GB | yes | Transformers | vLLM | MD/JSON | 93.7 OmniDocBench v1.6 |
 | [Surya 2](https://github.com/datalab-to/surya) | ~0.65B | ~2.5 GB | yes | `surya_ocr`, `surya_layout`, `surya_table` | same | boxes, layout, tables | Pareto-best under 3B (Datalab) |
 | [MonkeyOCR](https://huggingface.co/echo840/MonkeyOCR) | 1.2B / 3B | 4 to 7 GB | yes (1.2B) | Transformers | vLLM/LMDeploy | MD/JSON | Strong on Chinese/English docs |
 | [olmOCR-2-7B](https://huggingface.co/allenai/olmOCR-2-7B-1025) | 7B | ~16 GB (FP8 ~9) | no (FP8 marginal) | n/a (WSL2) | `olmocr.pipeline` on vLLM | MD | 82.4 olmOCR-Bench |
