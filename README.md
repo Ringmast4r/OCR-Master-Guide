@@ -1,16 +1,16 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:0F766E&height=220&section=header&text=OCR%20MASTER%20GUIDE&fontSize=64&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=60%2B%20engines%20%7C%20100%2B%20tools%20%7C%20Windows%20%2B%20Linux%20%7C%20Tesseract%20to%20VLMs&descSize=18&descAlignY=58"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:0F766E&height=220&section=header&text=OCR%20MASTER%20GUIDE&fontSize=64&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=The%20best%20OCR%20of%202026%2C%20ranked%20%7C%2060%2B%20engines%20%7C%20Windows%20%2B%20Linux&descSize=18&descAlignY=58"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=14B8A6&center=true&vCenter=true&multiline=true&repeat=true&width=950&height=80&lines=Every+OCR+engine+worth+running+on+Windows+and+Linux.;Tesseract+%C2%B7+PaddleOCR+%C2%B7+Surya+%C2%B7+olmOCR+%C2%B7+DeepSeek-OCR+%C2%B7+OneOCR;Pick+one.+Pair+it.+Pipeline+it.+Measure+it.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=14B8A6&center=true&vCenter=true&multiline=true&repeat=true&width=950&height=80&lines=Which+OCR+is+actually+the+best+in+2026%3F;OmniDocBench+%C2%B7+olmOCR-Bench+%C2%B7+ranked%2C+installed%2C+measured;PaddleOCR-VL+%C2%B7+MinerU+%C2%B7+GLM-OCR+%C2%B7+Chandra+%C2%B7+Marker+%C2%B7+DeepSeek-OCR)](https://git.io/typing-svg)
 
 <br>
 
-[![Engines](https://img.shields.io/badge/Engines-60%2B-0F766E?style=for-the-badge&logo=databricks&logoColor=white)](docs/02-engine-atlas.md)
-[![Guides](https://img.shields.io/badge/Guides-13-14B8A6?style=for-the-badge&logo=readme&logoColor=white)](#-docs)
-[![Recipes](https://img.shields.io/badge/Pairing_Recipes-14-2DD4BF?style=for-the-badge&logo=gnubash&logoColor=white)](docs/06-pairing-recipes.md)
-[![Platforms](https://img.shields.io/badge/Windows_%2B_Linux-native_%2B_GPU-000000?style=for-the-badge&logo=linux&logoColor=white)](docs/04-windows-stack.md)
-[![Scripts](https://img.shields.io/badge/Scripts-bench_%7C_preprocess_%7C_install-0F766E?style=for-the-badge&logo=python&logoColor=white)](scripts/)
+[![Best](https://img.shields.io/badge/%231_OmniDocBench-PaddleOCR--VL_1.6-0F766E?style=for-the-badge&logo=baidu&logoColor=white)](#-leaderboard---best-ocr-2026)
+[![Best2](https://img.shields.io/badge/%231_olmOCR--Bench-Chandra-14B8A6?style=for-the-badge&logo=huggingface&logoColor=white)](#-leaderboard---best-ocr-2026)
+[![Engines](https://img.shields.io/badge/Engines-60%2B-2DD4BF?style=for-the-badge&logo=databricks&logoColor=white)](docs/02-engine-atlas.md)
+[![Guides](https://img.shields.io/badge/Guides-13-000000?style=for-the-badge&logo=readme&logoColor=white)](#-docs)
+[![Install](https://img.shields.io/badge/Install_the_best-one_script-0F766E?style=for-the-badge&logo=python&logoColor=white)](#-install---best)
 
 [![Stars](https://img.shields.io/github/stars/Ringmast4r/OCR-Master-Guide?style=flat-square&color=0F766E&label=%E2%98%85%20Stars)](https://github.com/Ringmast4r/OCR-Master-Guide/stargazers)
 [![Forks](https://img.shields.io/github/forks/Ringmast4r/OCR-Master-Guide?style=flat-square&color=14B8A6&label=%E2%9A%A1%20Forks)](https://github.com/Ringmast4r/OCR-Master-Guide/network/members)
@@ -27,47 +27,148 @@
 ```bash
 ringmast4r@github:~$ cat ocr-master-guide.txt
 
-  PURPOSE:        One place that explains every serious OCR engine and how to pair them
-  SCOPE:          Classical (Tesseract) -> DL pipelines (PaddleOCR) -> VLM parsers (olmOCR)
-  PLATFORMS:      Windows 10/11 native, Linux native, WSL2, Docker, CUDA
-  COVERAGE:       60+ engines, 100+ tools, 14 pairing recipes, 13 guides, 7 scripts
-  METHOD:         Deep research (Sep 2026) + fast tutorials + runnable bench script
-  AUDIENCE:       Someone already running Tesseract who wants to know what else exists
-
+  PURPOSE:        Rank the best OCR tools of 2026 by the two public leaderboards, install them, measure them
+  RANKED BY:      OmniDocBench (OpenDataLab, Shanghai AI Lab) + olmOCR-Bench (Ai2, Allen Institute for AI)
+  WINNERS:        PaddleOCR-VL 1.6 (Baidu) | MinerU 2.5 (OpenDataLab) | GLM-OCR (Z.ai) | Chandra (Datalab)
+  ALSO COVERED:   60+ engines, 100+ tools, classical to VLM, Windows 10/11 + Linux + WSL2 + CUDA
+  HARDWARE:       Everything in the top tier under 4B params runs on an 8 GB consumer GPU
   STATUS:         [ ACTIVE ]
 ```
 
-> **OCR** turns pixels into text. In 2026 that is no longer one program. It is a stack:
-> preprocessing, layout analysis, text detection, recognition, post-correction, and output format.
-> Every layer has three or four good open-source options. This repo maps all of them and tells you
-> which ones fit together.
+> **The answer to "which OCR is best" in 2026 is not Tesseract.** It is a small vision-language model that
+> reads a whole page and writes Markdown. The two public leaderboards below agree on the top tier. This repo
+> ranks them, tells you which ones fit your GPU, installs them with one script, and benchmarks them on your own
+> pages so you can verify the ranking yourself.
 
 </div>
 
 ---
 
+## `> leaderboard --best-ocr-2026`
+
+Two independent public benchmarks. Both are open source and rerunnable. Scores are from each project's README
+on the date shown; they move every month, so click through before quoting.
+
+### OmniDocBench v1.6 (OpenDataLab, Shanghai AI Laboratory) - updated 30 Apr 2026
+
+1,651 PDF pages, 10 document types, English and Chinese. Scores text, formulas, tables, and reading order
+as one end-to-end parse. [Leaderboard](https://github.com/opendatalab/OmniDocBench)
+
+<div align="center">
+
+| Rank | Model | Org | Params | Overall | Fits 8 GB GPU | Windows native | License |
+|:----:|:------|:----|:------:|:-------:|:-------------:|:--------------:|:--------|
+| 1 | [PaddleOCR-VL-1.6](https://github.com/PaddlePaddle/PaddleOCR) | Baidu | 0.9B | **96.3** | yes | yes | Apache-2.0 |
+| 2 | [MinerU2.5-Pro](https://github.com/opendatalab/MinerU) | OpenDataLab | 1.2B | 95.8 | yes | yes (transformers backend) | AGPL-3.0 |
+| 3 | [GLM-OCR](https://huggingface.co/zai-org) | Z.ai (Zhipu) | 0.9B | 95.2 | yes | yes (transformers) | MIT |
+| 4 | PaddleOCR-VL-1.5 | Baidu | 0.9B | 94.9 | yes | yes | Apache-2.0 |
+| 5 | PaddleOCR-VL | Baidu | 0.9B | 94.2 | yes | yes | Apache-2.0 |
+| 6 | Youtu-Parsing | Tencent | 2.5B | 93.7 | yes | transformers | check card |
+| 7 | Qianfan-OCR | Baidu | 4B | 93.9 | tight | transformers | check card |
+| 8 | Ovis2.6-30B-A3B | AIDC | 30B MoE | 93.7 | no | no | Apache-2.0 |
+| 9 | Logics-Parsing-v2 | Alibaba | 4B | 93.3 | tight | transformers | check card |
+| 10 | ABot-OCR | Amap | 2B | 93.3 | yes | transformers | check card |
+| 11 | FireRed-OCR | FireRed | 2B | 93.3 | yes | transformers | check card |
+| 12 | [MinerU-2.5](https://github.com/opendatalab/MinerU) | OpenDataLab | 1.2B | 93.0 | yes | yes | AGPL-3.0 |
+| 13 | Gemini 3 Pro | Google | API | 92.9 | cloud | cloud | commercial |
+| 14 | Gemini 3 Flash | Google | API | 92.6 | cloud | cloud | commercial |
+| 15 | [dots.ocr](https://github.com/rednote-hilab/dots.ocr) | RedNote | 3B | 90.8 | yes | transformers | MIT |
+
+</div>
+
+### olmOCR-Bench (Ai2, Allen Institute for AI)
+
+1,400+ real PDFs, 7,000 unit tests (is this string present, is this table cell right, is the math correct).
+Heavier on old scans, tiny text, and multi-column English. [Leaderboard](https://github.com/allenai/olmocr)
+
+<div align="center">
+
+| Rank | Model | Org | Params | Overall | Fits 8 GB GPU | Windows native | License |
+|:----:|:------|:----|:------:|:-------:|:-------------:|:--------------:|:--------|
+| 1 | [Chandra 0.1](https://github.com/datalab-to/chandra) | Datalab | 8B | **83.1** | 4-bit only | transformers | Apache-2.0 |
+| 2 | Infinity-Parser 7B | Infinity | 7B | 82.5 | 4-bit only | transformers | check card |
+| 3 | [olmOCR-2 (v0.4.0)](https://github.com/allenai/olmocr) | Ai2 | 7B | 82.4 | FP8 marginal | WSL2 only | Apache-2.0 |
+| 4 | [PaddleOCR-VL](https://github.com/PaddlePaddle/PaddleOCR) | Baidu | 0.9B | 80.0 | yes | yes | Apache-2.0 |
+| 5 | [Marker 1.10](https://github.com/datalab-to/marker) | Datalab | pipeline | 76.1 | yes | yes | GPL-3.0 |
+| 6 | [DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | DeepSeek | 3B | 75.7 | yes | transformers | MIT |
+| 7 | [MinerU 2.5.4](https://github.com/opendatalab/MinerU) | OpenDataLab | 1.2B | 75.2 | yes | yes | AGPL-3.0 |
+| 8 | Mistral OCR API | Mistral | API | 72.0 | cloud | cloud | commercial |
+| 9 | [Nanonets-OCR2-3B](https://huggingface.co/nanonets/Nanonets-OCR2-3B) | Nanonets | 3B | 69.5 | 4-bit | transformers | Apache-2.0 |
+
+</div>
+
+<div align="center">
+
+```mermaid
+%%{init: {'theme':'dark', 'themeVariables': {'xyChart': {'backgroundColor':'#00000000','plotColorPalette':'#14B8A6','titleColor':'#14B8A6','xAxisLabelColor':'#ffffff','yAxisLabelColor':'#ffffff'}}}}%%
+xychart-beta
+    title "OmniDocBench v1.6 overall (OpenDataLab, Apr 2026)"
+    x-axis ["PaddleOCR-VL-1.6", "MinerU2.5-Pro", "GLM-OCR", "PaddleOCR-VL-1.5", "Youtu-Parsing", "Gemini 3 Pro", "dots.ocr"]
+    y-axis "Score" 88 --> 98
+    bar [96.3, 95.8, 95.2, 94.9, 93.7, 92.9, 90.8]
+```
+
+</div>
+
+### What the two boards agree on
+
+- **PaddleOCR-VL** is the only model in the top tier of *both* boards that runs on an 8 GB card natively on Windows. It is the default "best OCR" pick in this repo.
+- **Chandra, Infinity-Parser, and olmOCR-2** win olmOCR-Bench but are 7B to 8B models. You need 16 GB or a 4-bit build; Datalab and Ai2 also host them.
+- **MinerU 2.5** is the best open pipeline you can run end to end on a PDF folder on CPU or GPU, and its Pro model is rank 2 on OmniDocBench.
+- **GLM-OCR** is rank 3 at 0.9B under MIT, the most permissive license in the top three.
+- **The best cloud API** is Gemini 3 Pro on OmniDocBench and Mistral OCR on olmOCR-Bench, and both trail the small open models.
+- **Tesseract, EasyOCR, and every classical engine are absent** because these boards score Markdown structure, not plain text. On clean printed text they still work; on anything else they lost.
+
+---
+
+## `> install --best`
+
+One script installs the ranked winners that fit an 8 GB GPU on Windows: PaddleOCR-VL 1.6, MinerU 2.5, Marker, Surya, Docling, DeepSeek-OCR-capable Transformers, plus RapidOCR and Tesseract wrappers for the CPU diff.
+
+```powershell
+git clone https://github.com/Ringmast4r/OCR-Master-Guide.git
+cd OCR-Master-Guide
+.\scripts\install-best.ps1                 # CUDA torch + PaddlePaddle GPU + PaddleOCR-VL + MinerU + Marker + Surya + Docling + RapidOCR
+.\.venv\Scripts\Activate.ps1
+paddleocr doc_parser -i samples\clean_300dpi.png --save_path out\    # rank 1 model, Markdown + JSON out
+python scripts\ocr_bench.py samples\noisy_skewed.png --gt samples\ground_truth.txt   # every installed engine, CER + time
+```
+
+Linux: `bash scripts/install-linux.sh --gpu` then `pip install "paddleocr[doc-parser]" "mineru[core]" marker-pdf`. Servers (vLLM) and olmOCR's pipeline are Linux/WSL2 only; see [`docs/05`](docs/05-linux-stack.md).
+
+Python, rank 1 model:
+
+```python
+from paddleocr import PaddleOCRVL
+pipe = PaddleOCRVL()                         # downloads PaddleOCR-VL-1.6 on first run
+for r in pipe.predict("page.png"):
+    r.save_to_markdown("out/"); r.save_to_json("out/")
+```
+
+---
+
 ## `> tldr --pick-an-engine`
 
-If you only read one table, read this one.
+Best-first. The ranked winner is listed where it applies; the CPU fallback where you have no GPU.
 
-| You have | Use this first | Then pair with | Why |
-|:---------|:---------------|:---------------|:----|
-| Clean printed scans, CPU only | **Tesseract 5.5** via **OCRmyPDF** | `unpaper` / `--deskew --clean` | Fastest install, searchable PDF/A out, 100+ languages |
-| Printed scans, want better accuracy on CPU | **RapidOCR** (PP-OCRv5/v6 on ONNX) | OpenCV preprocessing | Beats Tesseract on photos and mixed fonts, 15 MB, no PyTorch |
-| Screenshots / UI text on Windows | **OneOCR** (Snipping Tool engine) or **Windows.Media.Ocr** | PowerToys Text Extractor for hotkey use | Built into the OS, instant, surprisingly accurate on rendered text |
-| Screenshots on Linux | **NormCap** | Tesseract (bundled) | Select region, text lands in clipboard |
-| PDFs with tables, columns, math -> Markdown for an LLM | **Marker** (Surya) or **MinerU** or **Docling** | LLM post-correction | Layout aware, outputs Markdown/JSON, batch friendly |
-| Same, best possible accuracy, you have a GPU | **PaddleOCR-VL 1.6** / **DeepSeek-OCR-2** / **Chandra** via vLLM | OmniDocBench to verify | Top of the 2026 leaderboards, sub-4B models fit an 8 GB card |
-| Handwriting (modern) | **Surya 2** or **Qwen3-VL 8B** (Ollama) | TrOCR for line crops | VLMs read cursive that Tesseract cannot |
-| Handwriting (historical, archival) | **Kraken** + **eScriptorium** or **Transkribus** | PyLaia for training | Built by the digital-humanities world for exactly this |
-| Receipts, invoices, forms (key-value extraction) | **PaddleOCR PP-StructureV3** or **Azure Document Intelligence** | LLM for field mapping | Structure, not just text |
-| Formulas | **pix2tex** / **Texify** (crops), **UniMERNet**, **Nougat** or **Marker** (pages) | Marker `--use_llm` | Outputs LaTeX |
-| CJK, Arabic, Indic, mixed scripts | **PaddleOCR** (CJK), **Tesseract script models**, **Kraken** (Arabic) | YomiToku (Japanese), manga-ocr | Script-specific models win |
-| Thousands of pages, no GPU | **OCRmyPDF --jobs N** or **RapidOCR** in a pool | Paperless-ngx for storage | Throughput per dollar |
-| Thousands of pages, GPU | **olmOCR** pipeline or **vLLM** server + PaddleOCR-VL | olmOCR-Bench | Built for trillion-token PDF linearization |
-| No install at all, pay per page | **Mistral OCR 3** or **Azure Read** | Your own CER check | About $1.50 to $2 per 1,000 pages |
+| You have | Best (GPU) | CPU fallback | Why |
+|:---------|:-----------|:-------------|:----|
+| Any PDF or page image, want the best Markdown | **PaddleOCR-VL 1.6** | Docling + RapidOCR | Rank 1 OmniDocBench, 0.9B, Windows native |
+| A folder of PDFs, end to end | **MinerU 2.5** (`-b vlm-transformers`) | MinerU `-b pipeline` | Rank 2 OmniDocBench, handles the whole folder, JSON + MD |
+| English scans, old, multi-column, tiny text | **Chandra** (4-bit) or **olmOCR-2** (WSL2) | Marker | Top of olmOCR-Bench |
+| Permissive license for a product | **GLM-OCR** (MIT) or **PaddleOCR-VL** (Apache) | RapidOCR (Apache) | Rank 3 and 1, no copyleft |
+| Screenshots / UI text on Windows | OneOCR (Snipping Tool engine) | Windows.Media.Ocr, PowerToys | Built into the OS, instant |
+| Clean printed scans to searchable PDF/A | PaddleOCR-VL for text, OCRmyPDF for the PDF layer | Tesseract via OCRmyPDF | OCRmyPDF is still the only tool that writes PDF/A |
+| Phone photos, shadows, skew | PaddleOCR-VL or dots.ocr | RapidOCR + OpenCV | Trained on photos |
+| Handwriting, modern | Surya 2, Qwen3-VL 8B (Ollama) | TrOCR line crops | VLMs read cursive |
+| Handwriting, historical archives | Kraken + eScriptorium | PyLaia | Trainable on your material |
+| Receipts, invoices, forms to fields | PaddleOCR-VL or Nanonets-OCR2 -> LLM | PP-StructureV3 | Structure, then extraction |
+| Formulas | MinerU or PaddleOCR-VL (pages), pix2tex (crops) | UniMERNet | LaTeX out |
+| CJK, Arabic, Indic | PaddleOCR-VL, dots.ocr (100 languages) | PaddleOCR, Tesseract script models | Trained multilingual |
+| Thousands of pages, GPU | vLLM server + PaddleOCR-VL, or olmOCR pipeline | OCRmyPDF `--jobs`, RapidOCR pool | Batched inference |
+| No install, pay per page | Gemini 3 Pro, Mistral OCR 3 | Azure Read | Cloud, still behind the open models |
 
-Full reasoning per row: [`docs/06-pairing-recipes.md`](docs/06-pairing-recipes.md).
+Full recipes with code: [`docs/06-pairing-recipes.md`](docs/06-pairing-recipes.md).
 
 ---
 
@@ -77,101 +178,49 @@ Full reasoning per row: [`docs/06-pairing-recipes.md`](docs/06-pairing-recipes.m
 %%{init: {'theme':'dark', 'themeVariables': {'primaryColor':'#0F766E','primaryTextColor':'#ffffff','primaryBorderColor':'#14B8A6','lineColor':'#2DD4BF','fontSize':'14px'}}}%%
 flowchart TD
     A["What are you reading?"] --> B{"Screen or UI text?"}
-    B -- yes --> C["Windows: OneOCR / PowerToys / NormCap<br/>Linux: NormCap / Frog"]
-    B -- no --> D{"Printed, clean scan?"}
-    D -- yes --> E["Tesseract 5 + OCRmyPDF<br/>or RapidOCR on CPU"]
-    D -- no --> F{"Complex layout, tables, math?"}
-    F -- yes --> G{"GPU with 8 GB or more?"}
-    G -- yes --> H["Marker / MinerU / PaddleOCR-VL<br/>DeepSeek-OCR-2 via vLLM"]
-    G -- no --> I["Docling + RapidOCR<br/>PP-StructureV3 on CPU"]
-    F -- no --> J{"Handwriting?"}
-    J -- yes --> K["Surya 2 / Qwen3-VL / TrOCR<br/>historical: Kraken + eScriptorium"]
-    J -- no --> L{"Photo or scene text?"}
-    L -- yes --> M["PaddleOCR / EasyOCR / docTR<br/>+ OpenCV preprocessing"]
-    L -- no --> N["Cloud: Azure Read / Mistral OCR 3"]
+    B -- yes --> C["Windows: OneOCR / PowerToys<br/>Linux: NormCap"]
+    B -- no --> G{"GPU with 8 GB or more?"}
+    G -- yes --> H["PaddleOCR-VL 1.6 (rank 1)<br/>MinerU 2.5 for whole folders<br/>Chandra 4-bit for old English scans"]
+    G -- no --> D{"Clean printed scan?"}
+    D -- yes --> E["Tesseract via OCRmyPDF<br/>or RapidOCR"]
+    D -- no --> I["Docling + RapidOCR<br/>MinerU pipeline backend"]
+    H --> J{"Handwriting?"}
+    J -- yes --> K["Surya 2 / Qwen3-VL<br/>historical: Kraken"]
+    J -- no --> L["Diff against RapidOCR<br/>(recipe 13) if it matters"]
 ```
-
----
-
-## `> stack --this-machine`
-
-Audit of the box this guide was written on (Windows 10 Home 19045, September 2026). Use it as a template for your own audit.
-
-| Component | Found | Verdict |
-|:----------|:------|:--------|
-| Tesseract | `v5.4.0.20240606` at `C:\Program Files\Tesseract-OCR`, **not on PATH**, languages `eng` + `osd` only | Upgrade to 5.5.3 (UB Mannheim), add to PATH, install `tessdata_best` `eng` and `script/Latin` |
-| Python | `py -3.11` = 3.11.9 (use this). Default `python` = 3.14.0a7 (avoid, no wheels) | Every venv in this repo is built with `py -3.11 -m venv` |
-| Python OCR libs | `opencv-python 4.11`, `pillow 12.2`, `numpy 1.26`; no pytesseract, paddle, rapidocr, easyocr, torch | `scripts/install-windows.ps1` fills the gap |
-| GPU | NVIDIA GeForce RTX 3070, 8 GB, driver 610.88, no `nvcc` | Fine. PyTorch/ONNX wheels bundle CUDA runtime. 8 GB fits every sub-4B VLM in [`docs/07`](docs/07-vlm-document-parsers.md) |
-| PDF helpers | No `ocrmypdf`, `magick`, `gs`, `pdftoppm`, `qpdf`, `unpaper` on PATH | Install via the script or use WSL2 for the Linux-only ones (`unpaper`) |
-| OS-native OCR | Windows 10 ships `Windows.Media.Ocr`; OneOCR needs the Windows 11 Snipping Tool files | See [`docs/04`](docs/04-windows-stack.md) for both |
-
----
-
-## `> quickstart`
-
-### Windows (PowerShell, 5 minutes)
-
-```powershell
-git clone https://github.com/Ringmast4r/OCR-Master-Guide.git
-cd OCR-Master-Guide
-.\scripts\install-windows.ps1          # Tesseract 5.5 via winget, tessdata_best, venv, pip deps
-.\.venv\Scripts\Activate.ps1
-python scripts\ocr_bench.py samples\clean_300dpi.png --gt samples\ground_truth.txt
-```
-
-### Linux (Debian/Ubuntu/Fedora/Arch, 5 minutes)
-
-```bash
-git clone https://github.com/Ringmast4r/OCR-Master-Guide.git
-cd OCR-Master-Guide
-bash scripts/install-linux.sh          # tesseract + ocrmypdf + unpaper + venv + pip deps
-source .venv/bin/activate
-python scripts/ocr_bench.py samples/noisy_skewed.png --gt samples/ground_truth.txt
-```
-
-`ocr_bench.py` runs **every engine it can import** (Tesseract, RapidOCR, EasyOCR, PaddleOCR, docTR, Surya, Windows OCR, OneOCR) on one image and prints time, characters, and CER against the ground truth. Install more engines, rerun, watch the table grow.
 
 ---
 
 ## `> atlas --summary`
 
-The full atlas with install lines, licenses, and weak spots is [`docs/02-engine-atlas.md`](docs/02-engine-atlas.md). The short version:
+Every engine, not just the winners. Full atlas with install lines, licenses, and weak spots: [`docs/02-engine-atlas.md`](docs/02-engine-atlas.md).
 
 <div align="center">
 
 | Generation | Engines | Runs on | Character |
 |:-----------|:--------|:--------|:----------|
-| **1. Classical line OCR** | Tesseract 5, Kraken, Calamari, OCRopus, Ocrad, GOCR | CPU | LSTM+CTC on binarized lines. Fast, tiny, deterministic, 100+ languages. Hates skew, noise, photos, handwriting |
-| **2. DL detector + recognizer** | PaddleOCR PP-OCRv5/v6, RapidOCR, EasyOCR, docTR, OnnxTR, MMOCR, OpenOCR, ocrs | CPU or GPU | DBNet/CRAFT detection + CRNN/SVTR recognition. Robust to photos, rotation, mixed fonts. Word-level boxes |
-| **3. Document parsers** | Marker, MinerU, Docling, olmOCR, Unstructured, Nougat, OCRmyPDF | CPU or GPU | Layout + reading order + tables + math -> Markdown/JSON/PDF-A. What you feed an LLM |
-| **4. VLM OCR models** | PaddleOCR-VL, DeepSeek-OCR-2, GLM-OCR, dots.ocr, HunyuanOCR, Chandra, olmOCR-2, Nanonets-OCR2, LightOnOCR, Granite-Docling, Surya 2, Qwen3-VL | GPU (or slow CPU) | One model does layout + OCR + tables + formulas. Top accuracy. Can hallucinate. Needs vLLM/Transformers/Ollama |
-| **5. Handwriting / HTR** | TrOCR, PyLaia, Kraken, Transkribus, eScriptorium, OCR4all, Loghi | CPU or GPU | Line-level transcription, trainable on your own hand or archive |
-| **6. OS-native** | Windows.Media.Ocr, OneOCR, PowerToys, Apple Vision | CPU/NPU | Zero install. Great on rendered text, screenshots, UI |
-| **7. Cloud** | Azure Document Intelligence, Google Document AI, AWS Textract, Mistral OCR 3 | API | Pay per page, no ops, strong on forms |
+| **5. VLM document parsers (the leaderboard)** | PaddleOCR-VL, MinerU 2.5, GLM-OCR, Chandra, olmOCR-2, DeepSeek-OCR-2, dots.ocr, HunyuanOCR, Nanonets-OCR2, LightOnOCR, Granite-Docling, Surya 2, Qwen3-VL | GPU (or slow CPU) | One model does layout + OCR + tables + formulas. Top accuracy. Can hallucinate |
+| **4. Document parsers (pipelines)** | Marker, MinerU pipeline, Docling, olmOCR, Unstructured, OCRmyPDF | CPU or GPU | Layout + reading order + tables -> Markdown/JSON/PDF-A |
+| **3. DL detector + recognizer** | PaddleOCR PP-OCRv5/v6, RapidOCR, EasyOCR, docTR, OnnxTR, MMOCR, OpenOCR | CPU or GPU | Boxes + strings. Robust to photos and rotation |
+| **2. Classical line OCR** | Tesseract 5, Kraken, Calamari, OCRopus | CPU | LSTM+CTC on binarized lines. Fast, tiny, 100+ languages. Hates skew, photos, handwriting |
+| **1. Handwriting / HTR** | TrOCR, PyLaia, Kraken, Transkribus, eScriptorium | CPU or GPU | Line-level, trainable on your own hand or archive |
+| **0. OS-native** | Windows.Media.Ocr, OneOCR, PowerToys, Apple Vision | CPU/NPU | Zero install, great on screenshots |
+| **Cloud** | Gemini 3, Mistral OCR 3, Azure Document Intelligence, Google Document AI, AWS Textract | API | Pay per page, prebuilt forms, behind the open models on both boards |
 
 </div>
 
 ---
 
-## `> benchmarks --olmocr-bench`
+## `> stack --this-machine`
 
-olmOCR-Bench scores published in the [allenai/olmocr](https://github.com/allenai/olmocr) README (higher is better, October 2025 snapshot). Details, caveats, and OmniDocBench in [`docs/09-evaluation.md`](docs/09-evaluation.md).
+The box this guide was written on (Windows 10 Home 19045, RTX 3070 8 GB, September 2026), and what `install-best.ps1` put on it.
 
-<div align="center">
-
-```mermaid
-%%{init: {'theme':'dark', 'themeVariables': {'xyChart': {'backgroundColor':'#00000000','plotColorPalette':'#14B8A6','titleColor':'#14B8A6','xAxisLabelColor':'#ffffff','yAxisLabelColor':'#ffffff'}}}}%%
-xychart-beta
-    title "olmOCR-Bench (overall score)"
-    x-axis ["Chandra 0.1", "olmOCR-2 v0.4", "MinerU 2.5.4", "Nanonets-OCR2-3B"]
-    y-axis "Score" 60 --> 90
-    bar [83.1, 82.4, 75.2, 69.5]
-```
-
-</div>
-
-Do not treat any single leaderboard as truth. Classical engines like Tesseract are not on it at all because the benchmark is about full-document Markdown, not raw text. On clean printed text a tuned Tesseract or docTR still ties the VLMs on character error rate.
+| Component | Found | After the script |
+|:----------|:------|:-----------------|
+| GPU | RTX 3070, 8 GB, driver 610.88 | PaddleOCR-VL 1.6, MinerU 2.5, Marker, Surya run on it; Chandra needs 4-bit |
+| Python | `py -3.11` = 3.11.9 (default `python` is a 3.14 alpha with no wheels) | `.venv` built with 3.11 |
+| Tesseract | 5.4.0 in Program Files, off PATH, English only | Kept as the CPU diff engine via pytesseract |
+| OS-native | Windows.Media.Ocr present | `winocr` wrapper installed; OneOCR needs the Snipping Tool files ([docs/04](docs/04-windows-stack.md)) |
 
 ---
 
@@ -181,15 +230,15 @@ Do not treat any single leaderboard as truth. Classical engines like Tesseract a
 |:-:|:------|:---------------|
 | 01 | [What OCR actually is](docs/01-what-is-ocr.md) | The pipeline, five generations of engines, CTC vs attention vs VLM, metrics, failure modes |
 | 02 | [Engine atlas](docs/02-engine-atlas.md) | Every engine and tool: class, license, GPU, OS, best-for, weak spot, install line, link |
-| 03 | [Tesseract deep dive](docs/03-tesseract-deep-dive.md) | Versions, tessdata_best vs fast, PSM/OEM, config vars, output formats, wrappers, fine-tuning |
-| 04 | [Windows stack](docs/04-windows-stack.md) | UB Mannheim installer, PATH, Windows.Media.Ocr, OneOCR, PowerToys, CUDA on Windows, WSL2 |
-| 05 | [Linux stack](docs/05-linux-stack.md) | apt/dnf/pacman, OCRmyPDF 17, NormCap, gImageReader, Paperless-ngx, Docker, GPU |
+| 03 | [Tesseract deep dive](docs/03-tesseract-deep-dive.md) | Running the classical engine right: tessdata_best, PSM/OEM, config vars, output formats, fine-tuning |
+| 04 | [Windows stack](docs/04-windows-stack.md) | UB Mannheim installer, Windows.Media.Ocr, OneOCR, PowerToys, CUDA on Windows, WSL2 |
+| 05 | [Linux stack](docs/05-linux-stack.md) | apt/dnf/pacman, OCRmyPDF 17, NormCap, Paperless-ngx, vLLM servers, Docker, GPU |
 | 06 | [Pairing recipes](docs/06-pairing-recipes.md) | 14 end-to-end pipelines by document type, ensemble voting, LLM post-correction |
-| 07 | [VLM document parsers](docs/07-vlm-document-parsers.md) | Model cards, VRAM table for an 8 GB card, vLLM / Transformers / Ollama routes, hallucination control |
-| 08 | [Preprocessing](docs/08-preprocessing.md) | DPI, deskew, binarization (Otsu/Sauvola/adaptive), denoise, borders, when NOT to preprocess |
-| 09 | [Evaluation](docs/09-evaluation.md) | CER/WER, jiwer, dinglehopper, olmOCR-Bench, OmniDocBench, building ground truth |
-| 10 | [Training and fine-tuning](docs/10-training-finetuning.md) | tesstrain, Kraken ketos, PaddleOCR, PyLaia, TrOCR, synthetic data |
-| 11 | [Cloud APIs](docs/11-cloud-apis.md) | Azure, Google, AWS, Mistral OCR 3, pricing per 1,000 pages, when cloud wins |
+| 07 | [VLM document parsers](docs/07-vlm-document-parsers.md) | Model cards for the leaderboard models, VRAM fit table for 8 GB, vLLM / Transformers / Ollama routes |
+| 08 | [Preprocessing](docs/08-preprocessing.md) | DPI, deskew, binarization, denoise, borders, and when NOT to preprocess (VLMs) |
+| 09 | [Evaluation](docs/09-evaluation.md) | CER/WER, jiwer, dinglehopper, both leaderboards explained, building your own ground truth |
+| 10 | [Training and fine-tuning](docs/10-training-finetuning.md) | tesstrain, Kraken ketos, PaddleOCR, PyLaia, TrOCR, small-VLM LoRA |
+| 11 | [Cloud APIs](docs/11-cloud-apis.md) | Gemini, Mistral OCR 3, Azure, Google, AWS, pricing per 1,000 pages |
 | 12 | [Glossary](docs/12-glossary.md) | Every acronym in this repo, one line each |
 | 13 | [Link index](docs/13-link-index.md) | Alphabetical master list of every project referenced, with URLs |
 
@@ -204,20 +253,21 @@ OCR-Master-Guide/
 |-- LICENSE                      MIT (scripts and text)
 |-- docs/                        13 guides (see table above)
 |-- scripts/
+|   |-- install-best.ps1         Windows: CUDA torch + PaddlePaddle GPU + the ranked winners
+|   |-- install-windows.ps1      Windows: Tesseract 5.5 + tessdata_best + venv + CPU stack
+|   |-- install-linux.sh         Linux: apt/dnf/pacman + ocrmypdf + unpaper + venv + pip
 |   |-- ocr_bench.py             run every installed engine on one image, compare CER + timing
-|   |-- preprocess.py            OpenCV CLI: deskew, binarize, denoise, upscale, border trim
-|   |-- tesseract_quickstart.py  finds tesseract.exe, runs PSM sweep, dumps TSV confidences
+|   |-- preprocess.py            OpenCV CLI for the classical engines: deskew, binarize, denoise, upscale
+|   |-- tesseract_quickstart.py  finds tesseract.exe, runs a PSM sweep, dumps TSV confidences
 |   |-- windows_native_ocr.py    Windows.Media.Ocr (winocr) and OneOCR from Python
 |   |-- make_samples.py          regenerates samples/ and the logo with Pillow
-|   |-- install-windows.ps1      winget Tesseract 5.5 + tessdata_best + venv + pip
-|   |-- install-linux.sh         apt/dnf/pacman + ocrmypdf + unpaper + venv + pip
-|   |-- requirements.txt         CPU stack (tesseract, rapidocr, doctr, ocrmypdf, jiwer, opencv)
-|   `-- requirements-gpu.txt     adds torch CUDA, easyocr, paddleocr, surya, marker, docling
+|   |-- requirements.txt         CPU stack
+|   `-- requirements-gpu.txt     GPU stack (after the CUDA torch wheel)
 `-- samples/
     |-- clean_300dpi.png         printed text, 300 DPI equivalent
     |-- noisy_skewed.png         same text, 3 degree skew, noise, gray paper
-    |-- screenshot_ui.png        small anti-aliased UI text (the case Tesseract fails)
-    |-- ground_truth.txt         exact transcript for clean + noisy
+    |-- screenshot_ui.png        small anti-aliased UI text
+    |-- ground_truth.txt         transcript for clean + noisy
     `-- ground_truth_ui.txt      transcript for the screenshot
 ```
 
@@ -225,12 +275,11 @@ OCR-Master-Guide/
 
 ## `> pairing --philosophy`
 
-1. **Preprocess for classical engines, not for VLMs.** Tesseract wants a deskewed, binarized 300 DPI line. PaddleOCR-VL wants the original color image. Feeding a binarized image to a VLM makes it worse.
-2. **Detection and recognition are separable.** You can run PaddleOCR's DBNet detector, crop lines, and hand them to TrOCR or Tesseract. Every pipeline library exposes this.
-3. **Text-native PDFs do not need OCR.** Check with PyMuPDF first. Only rasterize pages that have no text layer (`ocrmypdf --skip-text` does this for you).
-4. **Two engines plus a diff beat one engine.** Run Tesseract and RapidOCR, align outputs, flag disagreements for review. Recipe 13.
-5. **LLM post-correction is not free.** It fixes obvious typos and invents plausible words in equal measure. Measure CER before and after (recipe 12, ICDAR 2026 HIPE-OCRepair findings).
-6. **Measure.** A ground-truth file of 30 lines you typed yourself is worth more than any leaderboard.
+1. **Preprocess for classical engines, not for VLMs.** Tesseract wants a deskewed, binarized 300 DPI line. PaddleOCR-VL wants the original color image.
+2. **Text-native PDFs do not need OCR.** MinerU, Marker, and Docling check for a text layer first. Do the same.
+3. **Two engines plus a diff beat one.** Run PaddleOCR-VL and RapidOCR, align outputs, review disagreements. Recipe 13. This is the cheapest hallucination check for a VLM.
+4. **LLM post-correction is measured, not assumed.** It fixes obvious typos and invents plausible words in equal measure. CER before and after (recipe 12).
+5. **A leaderboard is a prior, not a verdict.** Thirty lines of ground truth from your own documents through `ocr_bench.py` outranks both boards for your use.
 
 ---
 
@@ -238,18 +287,19 @@ OCR-Master-Guide/
 
 | Repo | What |
 |:-----|:-----|
+| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Rank 1 on OmniDocBench (PaddleOCR-VL 1.6) |
+| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | Rank 2 on OmniDocBench, best open end-to-end PDF pipeline |
+| [datalab-to/chandra](https://github.com/datalab-to/chandra) | Rank 1 on olmOCR-Bench |
+| [allenai/olmocr](https://github.com/allenai/olmocr) | olmOCR-2 and the olmOCR-Bench itself |
+| [opendatalab/OmniDocBench](https://github.com/opendatalab/OmniDocBench) | The OmniDocBench leaderboard |
+| [datalab-to/marker](https://github.com/datalab-to/marker) | The everyday PDF-to-Markdown pipeline |
+| [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | The classical engine, still the PDF/A workhorse via OCRmyPDF |
 | [Ringmast4r/pdf-archive](https://github.com/Ringmast4r/pdf-archive) | The PDFs this guide gets pointed at |
-| [Ringmast4r/OUI-Master-Database](https://github.com/Ringmast4r/OUI-Master-Database) | Same "merge every source" doctrine, applied to MAC vendors |
-| [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | The engine you already run |
-| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | The engine you should try next |
-| [datalab-to/marker](https://github.com/datalab-to/marker) | PDF -> Markdown, the everyday workhorse |
-| [allenai/olmocr](https://github.com/allenai/olmocr) | Batch VLM OCR at scale, plus olmOCR-Bench |
-| [opendatalab/OmniDocBench](https://github.com/opendatalab/OmniDocBench) | The document-parsing leaderboard everyone quotes |
 
 **Maintained by** [@Ringmast4r](https://github.com/Ringmast4r)
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:000000&height=120&section=footer&text=DETECT%20%C2%B7%20RECOGNIZE%20%C2%B7%20CORRECT%20%C2%B7%20MEASURE&fontSize=18&fontColor=ffffff&fontAlignY=65"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:000000&height=120&section=footer&text=RANK%20%C2%B7%20INSTALL%20%C2%B7%20MEASURE%20%C2%B7%20DIFF&fontSize=18&fontColor=ffffff&fontAlignY=65"/>
 
 </div>

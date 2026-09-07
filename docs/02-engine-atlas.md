@@ -80,7 +80,7 @@ and the 8 GB fit table are in [07-vlm-document-parsers.md](07-vlm-document-parse
 | Model | Org | Params | VRAM bf16 | License | Output | Notes |
 |:------|:----|:------:|:---------:|:--------|:-------|:------|
 | [PaddleOCR-VL 1.6](https://github.com/PaddlePaddle/PaddleOCR) | Baidu | 0.9B | ~3 GB | Apache-2.0 | MD/JSON with layout | 1.5 scored 94.5 on OmniDocBench; PP-DocLayoutV3 front end; runs via PaddleOCR, vLLM, SGLang, Transformers |
-| [GLM-OCR](https://huggingface.co/zai-org) | Z.ai | sub-1B class | ~3 GB | MIT (check card) | MD/JSON | Led OmniDocBench in spring 2026 per third-party roundups |
+| [GLM-OCR](https://huggingface.co/zai-org) | Z.ai | 0.9B | ~3 GB | MIT | MD/JSON | Rank 3 on OmniDocBench v1.6 (95.2), the most permissive license in the top three |
 | [DeepSeek-OCR-2](https://github.com/deepseek-ai/DeepSeek-OCR-2) | DeepSeek | ~3.4B | ~7.4 GB | MIT | MD | "Visual Causal Flow"; 91.09 on OmniDocBench v1.5; fits an 8 GB card in FP16, comfortable at INT4 |
 | [DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | DeepSeek | 3B (570M active MoE) | ~7 GB | MIT | MD | "Contexts Optical Compression": 64 to 800 vision tokens per page, Tiny/Small/Base/Large/Gundam modes |
 | [dots.ocr](https://github.com/rednote-hilab/dots.ocr) | rednote | 1.7B | ~5 GB | MIT | JSON layout + MD | Single model for layout + text, 100 languages, strong on multilingual |

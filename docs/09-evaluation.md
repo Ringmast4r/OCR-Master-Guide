@@ -76,10 +76,21 @@ dinglehopper gt.txt ocr.txt report          # report.html shows a colored charac
 | **UniMER-Test** | Formulas (printed, handwritten, screenshot, noisy) | BLEU, edit distance, ExpRate | UniMERNet, pix2tex, Texify |
 | **HIPE-OCRepair 2026** | LLM post-correction of historical OCR | cMER, preference score | Post-correction papers |
 
-Published numbers you will see in this repo (October 2025 olmOCR-Bench snapshot from the olmOCR README):
-Chandra 83.1, olmOCR-2 82.4, MinerU 2.5.4 75.2, Nanonets-OCR2-3B 69.5. OmniDocBench: PaddleOCR-VL-1.5 94.5,
-DeepSeek-OCR-2 91.09 (v1.5), GLM-OCR at the top of spring 2026 roundups. These are not comparable across
-benchmarks and change monthly; follow the links in [13](13-link-index.md).
+Published numbers as of the README snapshots used in this repo (both change monthly; follow the links in [13](13-link-index.md)):
+
+**OmniDocBench v1.6_full, OpenDataLab, updated 30 Apr 2026, overall score:**
+PaddleOCR-VL-1.6 96.3 (Baidu, 0.9B), MinerU2.5-Pro 95.8 (OpenDataLab, 1.2B), GLM-OCR 95.2 (Z.ai, 0.9B),
+PaddleOCR-VL-1.5 94.9, PaddleOCR-VL 94.2, Youtu-Parsing 93.7 (Tencent, 2.5B), Qianfan-OCR 93.9 (Baidu, 4B),
+Ovis2.6-30B-A3B 93.7, Logics-Parsing-v2 93.3 (Alibaba, 4B), ABot-OCR 93.3 (Amap, 2B), FireRed-OCR 93.3 (2B),
+MinerU-2.5 93.0, Gemini 3 Pro 92.9, Gemini 3 Flash 92.6, dots.ocr 90.8 (RedNote, 3B).
+
+**olmOCR-Bench, Ai2, README table (olmOCR v0.4.0 era):**
+Chandra 0.1 83.1 (Datalab, 8B), Infinity-Parser 7B 82.5, olmOCR-2 v0.4.0 82.4 (Ai2, 7B), PaddleOCR-VL 80.0,
+Marker 1.10.1 76.1, DeepSeek-OCR 75.7, MinerU 2.5.4 75.2, Mistral OCR API 72.0, Nanonets-OCR2-3B 69.5.
+
+The two boards disagree on the winner because they measure different things: OmniDocBench is half Chinese and
+weights tables and formulas heavily; olmOCR-Bench is English PDFs with old scans, tiny text, and multi-column
+unit tests. PaddleOCR-VL is the only model in the top tier of both that fits an 8 GB GPU.
 
 Classical engines are missing from the modern leaderboards because those measure Markdown structure. On
 plain-text CER for printed English, docTR (0.197 on one messy invoice set) tied Surya 2 (0.191) in a 2026
