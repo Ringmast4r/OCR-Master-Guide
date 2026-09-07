@@ -1,0 +1,15 @@
+# CPU stack. Python 3.11 or 3.12. Tesseract binary installed separately (see docs/04 and docs/05).
+pytesseract>=0.3.13
+rapidocr>=3.0.0
+onnxruntime>=1.18
+opencv-python>=4.10
+pillow>=10.1
+numpy>=1.26,<3
+scikit-image>=0.24
+jiwer>=3.0
+rapidfuzz>=3.0
+pymupdf>=1.24
+ocrmypdf>=16.0
+img2pdf>=0.5
+winocr>=0.0.13; sys_platform == "win32"
+oneocr>=1.0; sys_platform == "win32"

@@ -30,7 +30,7 @@ ringmast4r@github:~$ cat ocr-master-guide.txt
   PURPOSE:        One place that explains every serious OCR engine and how to pair them
   SCOPE:          Classical (Tesseract) -> DL pipelines (PaddleOCR) -> VLM parsers (olmOCR)
   PLATFORMS:      Windows 10/11 native, Linux native, WSL2, Docker, CUDA
-  COVERAGE:       60+ engines, 100+ tools, 14 pairing recipes, 13 guides, 6 scripts
+  COVERAGE:       60+ engines, 100+ tools, 14 pairing recipes, 13 guides, 7 scripts
   METHOD:         Deep research (Sep 2026) + fast tutorials + runnable bench script
   AUDIENCE:       Someone already running Tesseract who wants to know what else exists
 
@@ -217,7 +217,8 @@ OCR-Master-Guide/
     |-- clean_300dpi.png         printed text, 300 DPI equivalent
     |-- noisy_skewed.png         same text, 3 degree skew, noise, gray paper
     |-- screenshot_ui.png        small anti-aliased UI text (the case Tesseract fails)
-    `-- ground_truth.txt         exact transcript for CER scoring
+    |-- ground_truth.txt         exact transcript for clean + noisy
+    `-- ground_truth_ui.txt      transcript for the screenshot
 ```
 
 ---

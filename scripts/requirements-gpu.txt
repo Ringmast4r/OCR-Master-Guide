@@ -1,0 +1,17 @@
+# GPU stack. Install torch FIRST with the CUDA index that matches your driver:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+# PaddlePaddle GPU wheel comes from Baidu's index, not PyPI (see docs/04 section 4):
+#   pip install paddlepaddle-gpu==3.* -i https://www.paddlepaddle.org.cn/packages/stable/cu126/
+# The CPU paddlepaddle below is installed so PaddleOCR imports either way; the GPU wheel replaces it.
+easyocr>=1.7
+python-doctr[torch]>=0.10
+surya-ocr>=0.14
+marker-pdf>=1.0
+docling>=2.0
+transformers>=4.45
+accelerate>=1.0
+paddlepaddle>=3.0
+paddleocr>=3.0
+ollama>=0.4
+imagehash>=4.3
+pix2tex>=0.1.4

@@ -1,0 +1,4 @@
+Settings - Optical character recognition
+Language: English (United States)
+[ ] Enable table mode    [x] Copy to clipboard
+Status: 12 files processed, 0 errors, 3.4 s

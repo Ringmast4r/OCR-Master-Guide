@@ -1,0 +1,6 @@
+OCR Master Guide sample page 01
+The quick brown fox jumps over the lazy dog. 0123456789
+Invoice INV-2026-0907 total: $1,234.56 due 2026-10-01
+Serial A7F3-9K2Q-X0LM checksum 0x1F2E3D4C
+Tesseract, PaddleOCR, RapidOCR, Surya, olmOCR, OneOCR
+Line six ends here; measure CER, not vibes.
